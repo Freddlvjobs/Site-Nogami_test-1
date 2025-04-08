@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison Nogami - Agence Marketing Digital pour Professionnels du Bien-Être</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            color: #2E4A62;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero {
+            background: linear-gradient(rgba(168, 181, 162, 0.8), rgba(245, 232, 199, 0.6)), url('https://images.unsplash.com/photo-1491895202226-fd4ef68d6c2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .testimonial-card {
+            background-color: rgba(245, 232, 199, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-[#F5F5F5]">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center">
+                <span class="text-2xl font-bold text-[#2E4A62]">Maison Nogami</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#accueil" class="text-[#2E4A62] hover:text-[#A8B5A2] transition">Accueil</a>
+                <a href="#services" class="text-[#2E4A62] hover:text-[#A8B5A2] transition">Services</a>
+                <a href="#apropos" class="text-[#2E4A62] hover:text-[#A8B5A2] transition">À propos</a>
+                <a href="#contact" class="text-[#2E4A62] hover:text-[#A8B5A2] transition">Contact</a>
+            </div>
+            <button class="md:hidden text-[#2E4A62]">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero py-32 text-center text-white">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Transformez votre passion en succès digital</h1>
+            <p class="text-xl md:text-2xl mb-8">Nous créons des solutions digitales sur mesure pour les professionnels du bien-être</p>
+            <a href="#contact" class="bg-[#2E4A62] hover:bg-[#1E3A56] text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block">
+                Démarrer mon projet
+            </a>
+        </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Votre présence en ligne, simplifiée</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="bg-[#F5E8C7] rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-laptop-code text-3xl text-[#2E4A62]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Sites Web Professionnels</h3>
+                    <p class="text-gray-600">Des sites élégants et performants qui reflètent votre identité et attirent vos clients idéaux.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="bg-[#F5E8C7] rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chart-line text-3xl text-[#2E4A62]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Stratégie Digitale</h3>
+                    <p class="text-gray-600">Une approche sur mesure pour développer votre visibilité en ligne et convertir les visiteurs en clients.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="bg-[#F5E8C7] rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-paint-brush text-3xl text-[#2E4A62]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Identité Visuelle</h3>
+                    <p class="text-gray-600">Un branding cohérent qui renforce votre crédibilité et vous distingue de la concurrence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-[#F5F5F5]">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">Nos Services</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Nous accompagnons les coachs, thérapeutes et professionnels du bien-être dans leur transformation digitale.</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md service-card transition duration-300">
+                    <div class="h-48 bg-[#A8B5A2] flex items-center justify-center">
+                        <i class="fas fa-laptop text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Site Web Professionnel</h3>
+                        <p class="text-gray-600 mb-4">Un site vitrine élégant avec prise de rendez-vous en ligne, galerie et blog intégré.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-[#2E4A62]">À partir de 1 200 €</span>
+                            <a href="#contact" class="text-[#A8B5A2] hover:text-[#2E4A62] transition">En savoir plus →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md service-card transition duration-300">
+                    <div class="h-48 bg-[#A8B5A2] flex items-center justify-center">
+                        <i class="fas fa-pen-fancy text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Stratégie de Contenu</h3>
+                        <p class="text-gray-600 mb-4">Rédaction d'articles de blog et gestion de réseaux sociaux pour développer votre audience.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-[#2E4A62]">À partir de 500 €/mois</span>
+                            <a href="#contact" class="text-[#A8B5A2] hover:text-[#2E4A62] transition">En savoir plus →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md service-card transition duration-300">
+                    <div class="h-48 bg-[#A8B5A2] flex items-center justify-center">
+                        <i class="fas fa-bullhorn text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Publicité Digitale</h3>
+                        <p class="text-gray-600 mb-4">Campagnes publicitaires ciblées sur Google et Facebook pour attirer de nouveaux clients.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-[#2E4A62]">À partir de 800 €/mois</span>
+                            <a href="#contact" class="text-[#A8B5A2] hover:text-[#2E4A62] transition">En savoir plus →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contact" class="bg-[#2E4A62] hover:bg-[#1E3A56] text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block">
+                    Discutons de votre projet
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="apropos" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12">
+                    <h2 class="text-3xl font-bold mb-6">Notre Mission</h2>
+                    <p class="text-gray-600 mb-4">Chez Maison Nogami, nous croyons que chaque professionnel du bien-être mérite une présence en ligne à la hauteur de son expertise.</p>
+                    <p class="text-gray-600 mb-6">Notre approche allie esthétique, fonctionnalité et stratégie pour créer des solutions digitales qui vous ressemblent et attirent vos clients idéaux.</p>
+                    <div class="bg-[#F5E8C7] p-4 rounded-lg">
+                        <p class="italic text-[#2E4A62]">"Vous êtes passionné par votre métier, nous sommes passionnés par votre réussite en ligne."</p>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Notre équipe" class="rounded-lg shadow-lg w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-[#F5F5F5]">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Ils nous font confiance</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-[#A8B5A2] rounded-full flex items-center justify-center text-white font-bold mr-4">S</div>
+                        <div>
+                            <h4 class="font-bold">Sophie, Sophrologue</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="italic text-gray-600">"Grâce à Maison Nogami, j'ai enfin un site web qui me représente parfaitement. Les prises de rendez-vous en ligne ont augmenté de 40% en 3 mois."</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-[#A8B5A2] rounded-full flex items-center justify-center text-white font-bold mr-4">M</div>
+                        <div>
+                            <h4 class="font-bold">Marc, Coach de Vie</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="italic text-gray-600">"L'accompagnement personnalisé m'a permis de développer ma présence sur les réseaux sociaux sans y passer tout mon temps. Résultats impressionnants!"</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contact" class="border-2 border-[#2E4A62] text-[#2E4A62] hover:bg-[#2E4A62] hover:text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block">
+                    Rejoignez nos clients satisfaits
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Prêt à développer votre activité ?</h2>
+            
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12">
+                    <h3 class="text-xl font-bold mb-4">Contactez-nous</h3>
+                    <p class="text-gray-600 mb-6">Discutons de votre projet et trouvons ensemble la solution digitale qui correspond à vos besoins.</p>
+                    
+                    <div class="mb-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-[#A8B5A2] text-white rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <span>contact@maisonnogami.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-[#A8B5A2] text-white rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <span>+33 6 12 34 56 78</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-[#F5E8C7] p-4 rounded-lg">
+                        <h4 class="font-bold mb-2">Offre spéciale lancement</h4>
+                        <p>Bénéficiez de 15% de réduction sur votre premier projet !</p>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <form class="bg-[#F5F5F5] p-6 rounded-lg">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 mb-2">Nom complet</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#A8B5A2]">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#A8B5A2]">
+                        </div>
+                        <div class="mb-4">
+                            <label for="service" class="block text-gray-700 mb-2">Service intéressé</label>
+                            <select id="service" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#A8B5A2]">
+                                <option value="">Sélectionnez un service</option>
+                                <option value="website">Site Web Professionnel</option>
+                                <option value="content">Stratégie de Contenu</option>
+                                <option value="ads">Publicité Digitale</option>
+                                <option value="branding">Identité Visuelle</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700 mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#A8B5A2]"></textarea>
+                        </div>
+                        <button type="submit" class="bg-[#2E4A62] hover:bg-[#1E3A56] text-white font-bold py-3 px-6 rounded-lg w-full transition duration-300">
+                            Envoyer ma demande
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-12 bg-[#2E4A62] text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold mb-4">Restez informé</h2>
+            <p class="mb-6 max-w-2xl mx-auto">Abonnez-vous à notre newsletter pour recevoir des conseils exclusifs sur le marketing digital pour les professionnels du bien-être.</p>
+            <div class="max-w-md mx-auto flex">
+                <input type="email" placeholder="Votre email" class="flex-grow px-4 py-3 rounded-l-lg focus:outline-none text-gray-800">
+                <button class="bg-[#A8B5A2] hover:bg-[#8FA18A] text-white font-bold px-6 py-3 rounded-r-lg transition duration-300">
+                    S'abonner
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1E3A56] text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">Maison Nogami</h3>
+                    <p>Agence de marketing digital spécialisée dans le bien-être et la santé mentale.</p>
+                </div>
+                <div class="mb-6 md:mb-0">
+                    <h4 class="text-lg font-bold mb-4">Liens utiles</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#accueil" class="hover:text-[#A8B5A2] transition">Accueil</a></li>
+                        <li><a href="#services" class="hover:text-[#A8B5A2] transition">Services</a></li>
+                        <li><a href="#apropos" class="hover:text-[#A8B5A2] transition">À propos</a></li>
+                        <li><a href="#contact" class="hover:text-[#A8B5A2] transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Suivez-nous</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-[#2E4A62] rounded-full flex items-center justify-center hover:bg-[#A8B5A2] transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-[#2E4A62] rounded-full flex items-center justify-center hover:bg-[#A8B5A2] transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-[#2E4A62] rounded-full flex items-center justify-center hover:bg-[#A8B5A2] transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-[#2E4A62] mt-8 pt-8 text-center text-sm">
+                <p>© 2023 Maison Nogami. Tous droits réservés.</p>
+                <div class="mt-2">
+                    <a href="#" class="hover:text-[#A8B5A2] transition mx-2">Mentions légales</a>
+                    <a href="#" class="hover:text-[#A8B5A2] transition mx-2">Politique de confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Merci pour votre message! Nous vous contacterons très rapidement.');
+            this.reset();
+        });
+        
+        // Mobile menu toggle (would need more implementation)
+        document.querySelector('button.md\\:hidden').addEventListener('click', function() {
+            alert('Menu mobile à implémenter');
+        });
+    </script>
+</body>
+</html>
